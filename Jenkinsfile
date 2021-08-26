@@ -9,6 +9,7 @@ pipeline {
         }
 
         sh 'sh ejecutar_constructor_script.sh'
+        mail(subject: 'Estamos aqui', body: 'arranco el jenkins')
       }
     }
 
