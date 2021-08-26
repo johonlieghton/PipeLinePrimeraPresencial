@@ -4,7 +4,6 @@ pipeline {
     stage('Paso 1 Constructor App') {
       steps {
         echo 'Iniciamos la construccion de nuestra app'
-        mail(subject: 'Iniciando la construccion de nuestra app', body: 'comienza la ejecucion', charset: 'UTF-8', from: 'gp1304@gmail.com', replyTo: 'gp1304@gmail.com', to: 'gp1304@gmail.com')
         timestamps() {
           echo 'Marca de tiempo inicial'
         }
