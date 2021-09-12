@@ -38,6 +38,7 @@ pipeline {
     stage('Despliegue en Produccion') {
       steps {
         echo 'Desplegando en Produccion'
+        mail(subject: 'lieghton@gmail.com', body: 'Se ejecuto correctamente')
       }
     }
 
